@@ -136,6 +136,47 @@
               />
             </p>
           </div>
+
+          <h3>{{ t("settings.reCaptcha") }}</h3>
+        
+          <p class="small">{{ t("settings.reCaptchaDescription") }}</p>
+            
+          <p>
+            <label for="recap-host">{{
+              t("settings.reCaptchaHost")
+            }}</label>
+            <input
+              class="input input--block"
+              type="text"
+              v-model="settings.recaptcha.host"
+              id="recap-host"
+            />
+          </p>
+
+          <p>
+            <label for="recap-key">{{
+              t("settings.reCaptchaKey")
+            }}</label>
+            <input
+              class="input input--block"
+              type="text"
+              v-model="settings.recaptcha.key"
+              id="recap-key"
+            />
+          </p>
+
+          <p>
+            <label for="recap-secret">{{
+              t("settings.reCaptchaSecret")
+            }}</label>
+            <input
+              class="input input--block"
+              type="text"
+              v-model="settings.recaptcha.secret"
+              id="recap-secret"
+            />
+          </p>
+
         </div>
 
         <div class="card-action">

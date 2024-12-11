@@ -6,6 +6,7 @@ interface ISettings {
   rules: any[];
   branding: SettingsBranding;
   tus: SettingsTus;
+  recaptcha: SettingsRecaptcha;
   shell: string[];
   commands: SettingsCommand;
 }
@@ -34,6 +35,12 @@ interface SettingsBranding {
 interface SettingsTus {
   chunkSize: number;
   retryCount: number;
+}
+
+interface SettingsRecaptcha {
+  host: string;
+  key: string;
+  secret: string;
 }
 
 interface SettingsCommand {

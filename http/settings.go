@@ -16,6 +16,7 @@ type settingsData struct {
 	Rules            []rules.Rule          `json:"rules"`
 	Branding         settings.Branding     `json:"branding"`
 	Tus              settings.Tus          `json:"tus"`
+	Recaptcha        
 	Shell            []string              `json:"shell"`
 	Commands         map[string][]string   `json:"commands"`
 }
